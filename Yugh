@@ -1,2 +1,33 @@
+### Job Description: Test Automation Engineer
+
+#### Overview of the Position
+We are seeking a skilled Test Automation Engineer to join our dynamic team. The ideal candidate will have a strong background in implementing various test automation frameworks and will be instrumental in enhancing our testing processes. The role involves working with a range of tools including Selenium, LayWrite, Gatling, NeoLoad, and Jenkins, primarily within a Java framework environment, though Python is also utilized. The candidate should possess a solid understanding of both functional and non-functional testing and be well-versed in software development methodologies such as Agile and Scrum. 
+
+#### Responsibilities
+- Design, develop, and execute automated tests using tools such as Selenium, LayWrite, Gatling, NeoLoad, and TestComplete.
+- Integrate automated tests into the continuous integration/continuous deployment (CI/CD) pipeline using Jenkins.
+- Write and maintain automated test scripts using Java and Python.
+- Collaborate with cross-functional teams to ensure quality throughout the software development lifecycle (SDLC).
+- Analyze test results, identify defects, and ensure they are logged and tracked to resolution.
+- Develop and maintain test automation frameworks and contribute to improving testing efficiency.
+- Perform both functional and non-functional testing to validate software performance and reliability.
+- Participate in Agile/Scrum ceremonies and contribute to sprint planning, estimation, and retrospectives.
+- Stay updated with the latest industry trends and best practices in test automation.
+
+#### Requirements
+- At least one year of experience in test automation and related tools.
+- Proficiency in using Selenium, LayWrite, Gatling, NeoLoad, and TestComplete.
+- Strong knowledge of Java and Python for test automation.
+- Familiarity with SQL language for database testing.
+- Experience with build tools such as Maven and testing frameworks like TestNG.
+- Proficient in using version control systems, particularly Git.
+- Understanding of software development methodologies, including Agile and Scrum.
+- Knowledge of SDLC standards and best automation practices.
+- Experience in both functional and non-functional testing.
+- Strong problem-solving skills and attention to detail.
+- Excellent communication and teamwork skills.
+  
+We offer a collaborative work environment, opportunities for professional growth, and the chance to work on exciting projects with cutting-edge technologies. If you are passionate about test automation and meet the above criteria, we would love to hear from you.
+
 We are seeking a Test Automation Engineer to join our QA automation team. The QA Systems team is responsible for developing next-generation test automation frameworks for use by BBH testers and supporting development/QA teams in creating valuable, effective, and maintainable test automation solutions. In this role, you will collaborate closely with various development teams to introduce test automation frameworks and maintain automation during release cycles. We utilize industry-standard tools such as Selenium Webdriver and Jenkins, and we are open to adopting new tools and approaches. If you enjoy transforming manual tasks into automated processes and are adept at solving complex problems with innovative, custom solutions, our team offers the right challenges for you.
 [Your Name]
