@@ -1,10 +1,20 @@
-Certainly! Here's a more professionally phrased version:
+
+Certainly! Here's a more professional version:
 
 ---
 
-Dear All,
+Hi Igor,
 
-Tricentis, the vendor of the qTest test management tool for BBH, has been hosting a series of test talks to share knowledge and insights about this software. Below is a link to recordings of previous sessions. We encourage you to review them, as they may enhance your understanding of qTest's capabilities and help you leverage its features effectively.
+Our team has developed the KPI Metric Tool, designed to automatically gather test metrics for all projects tested by QM. This tool assists test leads in monitoring testing activities across teams. It can be accessed at the following URL: [https://qcs.tes.com/?orgId=1](https://qcs.tes.com/?orgId=1).
 
-Kind regards,  
-Rafal
+The KPI Metric Tool facilitates the automatic collection of data on defects, manual test executions, and automated test executions from QTest, Jira, and our test automation frameworks on a daily basis. This data is then presented to testers and test leads through Grafana reports.
+
+The application is built on two open-source components: Grafana, which serves as the reporting layer, and InfluxDB, which functions as our database. In the specific website unblocking request I submitted, I inquired about the possibility of downloading the latest version of InfluxDB to upgrade from the version we initially obtained last year when we began this project.
+
+We have not considered purchasing the commercial versions of either Grafana or InfluxDB.
+
+Please let me know if you have any further questions.
+
+Regards, 
+
+[Your Name]
