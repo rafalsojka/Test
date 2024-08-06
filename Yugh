@@ -1,1 +1,11 @@
-The team consists of two members who support all applications managed by QM, including JIRA, QTest Manager (our test management tool), and test automation tools such as TestComplete and/or NeoLoad. We provide company-wide support for JIRA, currently serving approximately 3,500 active users. We receive several customization requests daily, ranging from basic actions like granting permissions to more advanced requests that require significant development efforts in JIRA. The team has successfully delivered all projects on time. We maintain strong relationships across all business and systems teams. The main risk is the plan to replace JIRA next year, as the working group has not yet identified a suitable alternative.
+cat <<EOF | sudo tee /etc/yum.repos.d/grafana.repo
+[grafana]
+name=grafana
+baseurl=https://rpm.grafana.com
+repo_gpgcheck=1
+enabled=1
+gpgcheck=1
+gpgkey=https://rpm.grafana.com/gpg.key
+sslverify=1
+sslcacert=/etc/pki/tls/certs/ca-bundle.crt
+EOF
