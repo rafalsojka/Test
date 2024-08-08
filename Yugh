@@ -1,5 +1,19 @@
 cat <<EOF | sudo tee /etc/yum.repos.d/grafana.repo
-[grafana]
+[grafana]Certainly! Here's a more professionally phrased response:
+
+---
+
+Thank you, Vinayak.
+
+I appreciate Hexaware's efforts in sourcing candidates. I understand that finding the right fit can be challenging.
+
+However, it has been over six months since we began this search, and we have only conducted four interviews. Unfortunately, none of the candidates have met our requirements for a senior performance engineer or have been able to work within our conditions. Earlier this year, we even mentored a candidate, but that approach was unsuccessful due to the candidate's work style.
+
+This poses a risk to the BBY performance team. Could you identify the main challenges we face in attracting qualified candidates? Should we promote this position more aggressively? Please share how Hexaware is currently promoting this role online, such as on LinkedIn or your website.
+
+Best regards,
+
+Rafal
 name=grafana
 baseurl=https://rpm.grafana.com
 repo_gpgcheck=1
