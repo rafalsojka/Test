@@ -1,4 +1,10 @@
-Here’s a sample slide content highlighting how GitHub Copilot can boost productivity:
+HDear All,
+
+Please be advised that GitHub Copilot is currently unavailable within due to newly added domains required for communication with the GitHub Copilot cloud. A request to unblock these websites has already been submitted. Once approval is granted, our infrastructure defense team will enable the new domains on our firewalls. Until then, the tool will remain inaccessible. We appreciate your patience and will notify you as soon as GitHub Copilot is operational again.
+
+Kind regards,
+
+ere’s a sample slide content highlighting how GitHub Copilot can boost productivity:
 
 
 ---
