@@ -1,61 +1,112 @@
-HDear All,
+Here are some programming tasks tailored for a software test automation engineering role with Python expertise:
 
-Please be advised that GitHub Copilot is currently unavailable within due to newly added domains required for communication with the GitHub Copilot cloud. A request to unblock these websites has already been submitted. Once approval is granted, our infrastructure defense team will enable the new domains on our firewalls. Until then, the tool will remain inaccessible. We appreciate your patience and will notify you as soon as GitHub Copilot is operational again.
+Task 1: Basic Test Automation
 
-Kind regards,
+Write a Python script to test the following function:
 
-ere’s a sample slide content highlighting how GitHub Copilot can boost productivity:
+def calculate_area(length, width):
+    if length < 0 or width < 0:
+        raise ValueError("Length and width must be non-negative.")
+    return length * width
+
+Create unit tests for this function using the unittest library.
+
+Ensure the tests cover both valid and invalid inputs.
+
 
 
 ---
 
-How GitHub Copilot Increases Productivity
+Task 2: API Testing
 
-Code Autocompletion and Suggestions
+Given the following REST API endpoint:
 
-Reduces typing time with intelligent, context-aware code suggestions
+GET https://jsonplaceholder.typicode.com/posts/{id}
 
-Provides full functions or snippets based on context, accelerating code writing
+Write a Python script using requests to fetch the data for a given id and validate:
 
+The status code is 200.
 
-Automated Repetitive Coding Tasks
-
-Handles boilerplate code and repetitive structures, freeing up time for complex logic
-
-Generates code templates, such as function headers or class structures, instantly
-
-
-Enhanced Learning and Onboarding
-
-Offers relevant code examples and suggestions, helping new developers learn faster
-
-Reduces time spent searching for code patterns or syntax, accelerating onboarding
-
-
-Error Prevention and Code Quality
-
-Detects common mistakes and suggests improvements in real-time
-
-Helps enforce coding best practices and reduces debugging time
-
-
-Increased Focus on Logic and Problem Solving
-
-Handles routine coding aspects, allowing developers to focus on higher-level logic
-
-Minimizes context-switching, helping maintain flow and concentration
-
-
-Improved Collaboration
-
-Assists in understanding and contributing to others’ code quickly
-
-Acts as a second pair of eyes, providing real-time support
+The response contains keys: userId, id, title, and body.
 
 
 
 
 ---
 
-These points highlight specific ways in which GitHub Copilot supports productivity, from accelerating code writing to enhancing collaboration.
+Task 3: File Handling and Validation
+
+Write a Python program to:
+
+1. Read data from a CSV file with columns: name, age, email.
+
+
+2. Validate that:
+
+age is a positive integer.
+
+email contains an "@" symbol.
+
+
+
+3. Generate a report of invalid rows.
+
+
+
+
+---
+
+Task 4: Automation Script
+
+Create a Python script to simulate the following scenario:
+
+1. Open a browser using Selenium.
+
+
+2. Navigate to a sample login page (e.g., "https://example.com/login").
+
+
+3. Enter a username and password (use dummy values).
+
+
+4. Submit the form and capture the resulting page's title.
+
+
+
+
+---
+
+Task 5: Debugging Task
+
+The following code has a bug. Identify and fix it:
+
+def find_max(nums):
+    max_val = None
+    for num in nums:
+        if num > max_val:
+            max_val = num
+    return max_val
+
+
+---
+
+Task 6: Data Analysis
+
+Given a list of integers, write a Python function to:
+
+1. Return a list of unique integers sorted in ascending order.
+
+
+2. Calculate the average of the list.
+
+
+
+
+---
+
+Task 7: Continuous Integration
+
+Explain how you would integrate the Python test automation framework with a CI/CD pipeline (e.g., Jenkins, GitHub Actions). Provide a high-level overview or a sample configuration.
+
+Would you like additional guidance or more complex tasks?
 
