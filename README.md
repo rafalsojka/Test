@@ -1,33 +1,54 @@
-Subject: Escalation Process for ISM Support Over Weekends
+import javax.naming.*;
+import javax.naming.directory.*;
+import java.util.Hashtable;
 
-Dear [Boss's Name],
+public class ActiveDirectoryQuery {
+    public static void main(String[] args) {
+        // Active Directory connection details
+        String ldapURL = "ldap://your-ad-server:389"; // Replace with your AD server and port
+        String searchBase = "dc=example,dc=com"; // Replace with your domain
+        String searchFilter = "(sAMAccountName=jdoe)"; // Replace with your search filter
+        String bindDN = "your-username@example.com"; // Replace with your username
+        String bindPassword = "your-password"; // Replace with your password
 
-During yesterday’s meeting with the team, we discussed a concern regarding our ability to escalate issues and obtain necessary support from ISM over the weekends in case of emergencies.
+        // Set up the environment for creating the initial context
+        Hashtable<String, String> env = new Hashtable<>();
+        env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");
+        env.put(Context.PROVIDER_URL, ldapURL);
+        env.put(Context.SECURITY_AUTHENTICATION, "simple");
+        env.put(Context.SECURITY_PRINCIPAL, bindDN);
+        env.put(Context.SECURITY_CREDENTIALS, bindPassword);
 
-Currently, we face the following challenges:
+        try {
+            // Create the initial context
+            DirContext ctx = new InitialDirContext(env);
+            System.out.println("Connection established!");
 
-1. Lack of Contact Information: We are unsure how to contact ISM over the weekend to escalate urgent matters.
+            // Set up the search controls
+            SearchControls searchControls = new SearchControls();
+            searchControls.setSearchScope(SearchControls.SUBTREE_SCOPE);
 
+            // Perform the search
+            NamingEnumeration<SearchResult> results = ctx.search(searchBase, searchFilter, searchControls);
 
-2. Access Request Dependency: Access requests can only be raised by Security Coordinators, who typically do not work on weekends. This means we are unable to grant necessary access in scenarios where immediate action is required.
+            // Process the search results
+            while (results.hasMore()) {
+                SearchResult result = results.next();
+                System.out.println("Found entry: " + result.getNameInNamespace());
 
+                Attributes attrs = result.getAttributes();
+                NamingEnumeration<? extends Attribute> attributes = attrs.getAll();
+                while (attributes.hasMore()) {
+                    Attribute attr = attributes.next();
+                    System.out.println(attr.getID() + ": " + attr.get());
+                }
+            }
 
-
-For instance, if the Performance Test Team needs to run an emergency load test over the weekend and requires access to specific load IDs (as was the case earlier in 2024), we would have no choice but to postpone the test due to these limitations.
-
-To address this, it would be helpful if we could:
-
-1. Confirm whether there is an ISM on-call contact for weekends.
-
-
-2. Understand the escalation process for emergency situations requiring ISM support.
-
-
-
-Having clarity on these points would ensure we can act swiftly and efficiently during weekend emergencies, minimizing potential delays.
-
-Looking forward to your guidance on how we can proceed with this matter.
-
-Best regards,
-[Your Name]
-
+            // Close the context
+            ctx.close();
+            System.out.println("Connection closed!");
+        } catch (NamingException e) {
+            e.printStackTrace();
+        }
+    }
+}
