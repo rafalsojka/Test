@@ -1,54 +1,25 @@
-import javax.naming.*;
-import javax.naming.directory.*;
-import java.util.Hashtable;
+import javax.net.ssl.*;
+import java.security.cert.X509Certificate;
 
-public class ActiveDirectoryQuery {
-    public static void main(String[] args) {
-        // Active Directory connection details
-        String ldapURL = "ldap://your-ad-server:389"; // Replace with your AD server and port
-        String searchBase = "dc=example,dc=com"; // Replace with your domain
-        String searchFilter = "(sAMAccountName=jdoe)"; // Replace with your search filter
-        String bindDN = "your-username@example.com"; // Replace with your username
-        String bindPassword = "your-password"; // Replace with your password
-
-        // Set up the environment for creating the initial context
-        Hashtable<String, String> env = new Hashtable<>();
-        env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");
-        env.put(Context.PROVIDER_URL, ldapURL);
-        env.put(Context.SECURITY_AUTHENTICATION, "simple");
-        env.put(Context.SECURITY_PRINCIPAL, bindDN);
-        env.put(Context.SECURITY_CREDENTIALS, bindPassword);
-
-        try {
-            // Create the initial context
-            DirContext ctx = new InitialDirContext(env);
-            System.out.println("Connection established!");
-
-            // Set up the search controls
-            SearchControls searchControls = new SearchControls();
-            searchControls.setSearchScope(SearchControls.SUBTREE_SCOPE);
-
-            // Perform the search
-            NamingEnumeration<SearchResult> results = ctx.search(searchBase, searchFilter, searchControls);
-
-            // Process the search results
-            while (results.hasMore()) {
-                SearchResult result = results.next();
-                System.out.println("Found entry: " + result.getNameInNamespace());
-
-                Attributes attrs = result.getAttributes();
-                NamingEnumeration<? extends Attribute> attributes = attrs.getAll();
-                while (attributes.hasMore()) {
-                    Attribute attr = attributes.next();
-                    System.out.println(attr.getID() + ": " + attr.get());
+public class DisableCertValidation {
+    public static void disable() throws Exception {
+        TrustManager[] trustAllCerts = new TrustManager[]{
+            new X509TrustManager() {
+                public X509Certificate[] getAcceptedIssuers() {
+                    return null;
                 }
+                public void checkClientTrusted(X509Certificate[] certs, String authType) {}
+                public void checkServerTrusted(X509Certificate[] certs, String authType) {}
             }
+        };
 
-            // Close the context
-            ctx.close();
-            System.out.println("Connection closed!");
-        } catch (NamingException e) {
-            e.printStackTrace();
-        }
+        // Install the all-trusting trust manager
+        SSLContext sc = SSLContext.getInstance("TLS");
+        sc.init(null, trustAllCerts, new java.security.SecureRandom());
+        HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+
+        // Optionally disable hostname verification
+        HostnameVerifier allHostsValid = (hostname, session) -> true;
+        HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
     }
 }
