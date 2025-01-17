@@ -1,3 +1,5 @@
-**Introduction**  
+**GitHub Copilot Training Opportunities**  
 
-Welcome to the GitHub Copilot License Assignment Overview. Below, you will find a table listing the automation testers in our team who currently hold an active GitHub Copilot license. This table helps track license allocation and ensures efficient usage of the tool across our projects. If you have any questions or need changes regarding assignments, please feel free to contact the administrator.
+The Quality Management Test Automation team is pleased to announce the development of a dedicated training program on GitHub Copilot, tailored specifically to meet the unique requirements of our organization. Further details regarding this training will be communicated soon.  
+
+In addition to our internal initiative, we encourage you to take advantage of external learning opportunities. Below is a comprehensive list of upcoming GitHub Copilot training sessions offered by O'Reilly and Microsoft, scheduled for January and February. These sessions provide an excellent opportunity to deepen your understanding and enhance your skills with this innovative tool.
