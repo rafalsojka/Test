@@ -1,4 +1,12 @@
-The "[JIRA] [DAR 2.0] Daily Data Protection" report includes only tickets that are in the "Data Masking" and "In Review" queues, as explicitly stated in the email below. It does not display tickets in the "DBA Assigned" status that are awaiting the DBA to click the "DBA Copying Completed" button.
+The ITSS QM Team has developed the following initiatives to support the use of GitHub Copilot for test automation:
 
-In the case of DARII-2577, the delay was caused by Chona. This was not reflected in the "Data Protection" report because there was no prior request to include such cases. Therefore, the conclusion is that Chona was responsible for the delay in this instance.
+1. A mandatory training program for automation testers on utilizing GitHub Copilot for internal test case development, scheduled for the first week of March.
+
+
+2. An attestation process requiring automation testers to confirm their understanding of GitHub Copilot’s usage mandate and limitations.
+
+
+3. Comprehensive guidelines and best practices documentation for GitHub Copilot users, available on the BBH Confluence site.
+
+
 
