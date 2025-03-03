@@ -1,36 +1,13 @@
-Here's the corrected email with the proper time for the Monday session:
+Certainly!
 
 
 ---
 
-Subject: Mandatory GitHub Copilot Training for Automation Testers
+Welcome to the IT Shared Service Quality Management Test Automation documentation. This page serves as a comprehensive resource for our test automation efforts, focusing on the various frameworks and tools utilized by our team to ensure robust and efficient testing processes.
 
-Dear Automation Testers,
+Our team primarily relies on a mix of Java-based and Python-based testing frameworks. In the Java ecosystem, we utilize tools like TestNG for managing test cases, Maven for project management, JUnit for unit testing, Selenium for automated web application testing, and SoapUI for API testing. Additionally, JMeter is employed for performance testing, while Cucumber aids in behavior-driven development (BDD) through its readable specifications.
 
-As part of BBH’s AI Office initiative on Artificial Intelligence, we are introducing GitHub Copilot for test automation experts in our organization. As you may know, GitHub Copilot is an AI-powered tool that assists software developers in writing code and can significantly enhance test code development productivity.
+On the Python side, we incorporate frameworks such as Pytest for versatile testing, along with other tools like Jenkins for continuous integration and SQL databases for data-driven testing. Our approach ensures that we cover a wide range of testing needs, from functional to performance and API testing.
 
-Your test leaders and managers have selected you as eligible for access to GitHub Copilot. Before granting access, you are required to attend one of the mandatory training sessions to familiarize yourself with the tool and the access process.
-
-Three training sessions have been scheduled at different dates and times. You only need to attend one session—please choose the one that best fits your schedule and workload:
-
-Thursday, March 6 – 10:00 AM CEST | 4:00 AM EST | 2:30 PM IST
-
-Friday, March 7 – 2:00 PM CEST | 8:00 AM EST | 6:30 PM IST
-
-Monday, March 10 – 5:00 PM CEST | 11:00 AM EST | 9:30 PM IST
-
-
-During the training, we will provide an overview of GitHub Copilot and explain the process for gaining access within BBH.
-
-If you are unable to attend any of these sessions, please contact the GitHub Copilot Coordinator Group to discuss alternative arrangements.
-
-Best regards,
-[Your Name]
-[Your Role]
-BBH
-
-
----
-
-This version includes the correct 5:00 PM CEST time for the Monday session and adjusts the corresponding EST and IST times accordingly.
+This documentation aims to provide detailed insights into each framework, guiding team members through best practices, setup instructions, and usage examples. Whether you're a newcomer or an experienced tester, we hope this resource will support your efforts in delivering high-quality software solutions.
 
