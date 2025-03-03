@@ -1,15 +1,14 @@
-### **GitHub Copilot Training Overview**  
+### **GitHub Copilot: Review & Monitoring**  
 
-There are **two mandatory trainings** in the GitHub Copilot onboarding process:
+The **Review & Monitoring** phase ensures that GitHub Copilot is being used effectively and responsibly across the organization. Key aspects include:
 
-1. **Pre-Attestation Training (Current)**  
-   - Focuses on educating testers about GitHub Copilot’s capabilities, limitations, and compliance rules.  
-   - This training is required before completing the attestation process.  
+- **Monthly Usage Reviews**  
+  - Regular assessments will be conducted to monitor GitHub Copilot usage and ensure compliance with the established guidelines.  
 
-2. **Post-Access Enablement Training (After Access Grant)**  
-   - Takes place after GitHub Copilot access is granted.  
-   - Ensures users are equipped with advanced knowledge for responsible usage in test automation.  
+- **Inactive License Management**  
+  - Testers who do not activate their Copilot license for **two consecutive months** will have their access revoked and reassigned to other testers.  
 
-Additionally, testers have access to **optional online training** via platforms such as **O'Reilly**, offering additional resources to enhance learning.  
+- **Monitoring ROI**  
+  - GitHub Copilot coordinators are responsible for evaluating the **Return on Investment (ROI)** from Copilot usage. This will be done through the collection of data via **regular surveys** to assess the tool's impact on productivity and efficiency.  
 
-These trainings ensure a comprehensive understanding of GitHub Copilot for safe and effective usage.
+This process ensures the efficient allocation of licenses and provides ongoing feedback to optimize GitHub Copilot's usage in test automation.
