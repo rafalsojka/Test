@@ -1,14 +1,24 @@
-### **Governance Process for GitHub Copilot Usage**  
+### **GitHub Copilot Onboarding Process**  
 
-To ensure compliance with regulatory requirements and mitigate potential risks, our organization has established a governance framework for the use of GitHub Copilot in test automation. All testers must complete an attestation process to confirm their understanding of the associated risks and permitted usage. Copilot is strictly limited to generating test code and test data, with clear restrictions on handling confidential information and deploying AI-generated code to production. These guidelines are in place to align with legal and compliance obligations while enabling the safe and effective use of AI-assisted development.
+To ensure a structured and compliant rollout of GitHub Copilot within our organization, we have established a **five-phase onboarding process**. This approach ensures that all users are properly trained, attest to their understanding of usage guidelines, and have their access managed efficiently.  
 
-### **GitHub Copilot Usage Guidelines for Test Automation in Our Bank**  
+#### **1. Process Definition (Completed – January & February)**  
+During this phase, we established the governance framework for GitHub Copilot usage in our organization. This included defining **usage policies, compliance requirements, and security considerations** to align with industry regulations and internal guidelines.  
 
-- **Mandatory Attestation Process** – All automation testers must complete an attestation process to acknowledge and understand the risks associated with using GitHub Copilot.  
-- **Restricted Usage Scope** – Copilot may only be used to generate **test code** and **test data**. Any other use, including development of production code, is strictly prohibited.  
-- **Confidentiality Compliance** – Under no circumstances should confidential, sensitive, or proprietary information be entered into Copilot. This includes customer data, internal algorithms, or business logic.  
-- **No Deployment to Production** – Test code generated with Copilot **must not be deployed** in any production environment. This restriction is due to potential legal and compliance implications.  
-- **Legal and Compliance Considerations** – The limitations on Copilot usage stem from regulatory requirements and legal risks associated with AI-generated code.  
-- **Accountability and Review** – Users remain fully responsible for reviewing and validating all Copilot-generated test scripts to ensure correctness and compliance with internal security policies.  
+#### **2. Training & Awareness (In Progress – February/March)**  
+This phase focuses on educating testers on the **capabilities, limitations, and compliance aspects** of GitHub Copilot. This meeting is part of the training initiative, ensuring that all users understand **how to use Copilot responsibly and effectively in test automation**.  
 
-Would you like me to refine any points or add further clarifications?
+#### **3. Formal Attestation (Initiated Next Week – March)**  
+Following this training, all testers will be required to **acknowledge their understanding** of the GitHub Copilot usage policies. Next week, each of you will receive an **attestation task** via the AI Office Attestation Page. Completion of this step is **mandatory before access can be granted**.  
+
+#### **4. Access Enablement (March & April)**  
+Copilot licenses will be assigned in **two waves**:  
+- **Group 1:** Access will be granted in **March**.  
+- **Group 2:** Access will be granted in **April**.  
+
+The **GitHub Coordination Team** will contact each individual once a Copilot license has been assigned. Testers will be onboarded in stages to ensure a **smooth transition and efficient support**.  
+
+#### **5. Review & Monitoring (Ongoing – Monthly)**  
+To ensure optimal license utilization, a **monthly review** process will be conducted. The **GitHub Copilot Coordinator** will monitor license usage, and any **inactive license (not activated for two consecutive months) will be revoked** and reassigned to testers still waiting for access. This ensures fair distribution of available licenses.  
+
+Would you like to refine any details or add specific points for clarity?
