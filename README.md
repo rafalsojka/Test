@@ -1,27 +1,14 @@
-GitHub Copilot is an AI-powered coding assistant that integrates seamlessly into development environments to provide real-time code suggestions. Understanding its data flow is crucial for assessing its impact on security and compliance, especially in sensitive industries like banking.
+### **Governance Process for GitHub Copilot Usage**  
 
-**Overview of GitHub Copilot's Data Flow:**
+To ensure compliance with regulatory requirements and mitigate potential risks, our organization has established a governance framework for the use of GitHub Copilot in test automation. All testers must complete an attestation process to confirm their understanding of the associated risks and permitted usage. Copilot is strictly limited to generating test code and test data, with clear restrictions on handling confidential information and deploying AI-generated code to production. These guidelines are in place to align with legal and compliance obligations while enabling the safe and effective use of AI-assisted development.
 
-1. **Context Collection:** As you write code, Copilot gathers context from your current file, related files, and any comments or functions you've written.
+### **GitHub Copilot Usage Guidelines for Test Automation in Our Bank**  
 
-2. **Prompt Construction:** This context is used to build a prompt that represents the coding task or query.
+- **Mandatory Attestation Process** – All automation testers must complete an attestation process to acknowledge and understand the risks associated with using GitHub Copilot.  
+- **Restricted Usage Scope** – Copilot may only be used to generate **test code** and **test data**. Any other use, including development of production code, is strictly prohibited.  
+- **Confidentiality Compliance** – Under no circumstances should confidential, sensitive, or proprietary information be entered into Copilot. This includes customer data, internal algorithms, or business logic.  
+- **No Deployment to Production** – Test code generated with Copilot **must not be deployed** in any production environment. This restriction is due to potential legal and compliance implications.  
+- **Legal and Compliance Considerations** – The limitations on Copilot usage stem from regulatory requirements and legal risks associated with AI-generated code.  
+- **Accountability and Review** – Users remain fully responsible for reviewing and validating all Copilot-generated test scripts to ensure correctness and compliance with internal security policies.  
 
-3. **Data Transmission:** The prompt is securely transmitted to GitHub's cloud-based servers hosted on Microsoft Azure.
-
-4. **AI Processing:** The prompt is processed by OpenAI's Codex model, which generates code suggestions based on the provided context.
-
-5. **Response Delivery:** The generated code suggestions are sent back to your development environment, where you can review and incorporate them as needed.
-
-For a detailed explanation of how GitHub Copilot handles data, you can refer to GitHub's official resource: citeturn0search0
-
-**Visual Illustrations of GitHub Copilot's Data Flow:**
-
-While specific data flow diagrams may not be readily available, the following resources provide insights into Copilot's architecture and operations:
-
-- **GitHub Copilot Essentials:** This guide offers an in-depth look at Copilot's data pipeline and security measures. citeturn0search0
-
-- **Software Design Diagrams Using GitHub Copilot:** This video demonstrates how Copilot can assist in creating software design diagrams, which might help visualize its integration into development workflows. citeturn0search3
-
-- **Using GitHub Copilot for Azure, Python, and Diagrams:** This video showcases how Copilot can be utilized for generating diagrams, providing insights into its capabilities and potential applications. citeturn0search4
-
-These resources should provide a comprehensive understanding of GitHub Copilot's data flow and its implications for your organization's development processes. 
+Would you like me to refine any points or add further clarifications?
