@@ -1,3 +1,30 @@
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.jira.issue.history.ChangeItemBean
+
+def issueKey = "ABC-123"  // Replace with your issue key
+def statusName = "In Review" // Replace with your actual status name
+
+def issueManager = ComponentAccessor.issueManager
+def changeHistoryManager = ComponentAccessor.changeHistoryManager
+
+def issue = issueManager.getIssueByCurrentKey(issueKey)
+
+if (!issue) {
+    return "Issue not found: $issueKey"
+}
+
+// Get all status change items
+def statusChanges = changeHistoryManager.getChangeItemsForField(issue, "status")
+
+// Find the most recent transition to "In Review"
+def targetTransition = statusChanges.findLast { it.toString == statusName }
+
+if (targetTransition) {
+    return "Transition to '$statusName' occurred on: ${targetTransition.created}"
+} else {
+    return "No transition to '$statusName' found for issue $issueKey"
+}
+
 Here’s the updated professional description incorporating the additional details:  
 
 ---
