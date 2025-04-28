@@ -1,42 +1,44 @@
-import com.atlassian.jira.component.ComponentAccessor
-import com.atlassian.jira.issue.history.ChangeItemBean
+Sure, here’s a generated answer you can use, aligned with the style of your existing SDLC description:
 
-def issueKey = "ABC-123"  // Replace with your issue key
-def statusName = "In Review" // Replace with your actual status name
-
-def issueManager = ComponentAccessor.issueManager
-def changeHistoryManager = ComponentAccessor.changeHistoryManager
-
-def issue = issueManager.getIssueByCurrentKey(issueKey)
-
-if (!issue) {
-    return "Issue not found: $issueKey"
-}
-
-// Get all status change items
-def statusChanges = changeHistoryManager.getChangeItemsForField(issue, "status")
-
-// Find the most recent transition to "In Review"
-def targetTransition = statusChanges.findLast { it.toString == statusName }
-
-if (targetTransition) {
-    return "Transition to '$statusName' occurred on: ${targetTransition.created}"
-} else {
-    return "No transition to '$statusName' found for issue $issueKey"
-}
-
-Here’s the updated professional description incorporating the additional details:  
 
 ---
 
-**QM KPI Metric Tool** is a Java-based application designed to collect, store, and visualize key quality management metrics across multiple testing platforms. The tool integrates with various systems to provide a comprehensive view of test execution and defect tracking:  
+System Performance (Pressure) Testing Approach
 
-- **Manual Test Execution**: Data is retrieved from **qTest Manager**, offering insights into manual testing efforts.  
-- **Defect Tracking**: Defects can be tracked in **qTest Manager and/or JIRA**, depending on the preferences of the test and development teams.  
-- **Automated Test Execution**: Metrics are collected through **test automation listeners**, supporting widely used programming languages and frameworks such as **Java/TestNG, Java/JUnit, Cucumber**, and others.  
+As part of agd’s technology best practices, systems are designed and implemented to scale both horizontally and vertically to accommodate at least three times (3x) the anticipated peak load. Performance and load testing, often referred to as pressure testing, is integrated into our secure Software Development Lifecycle (SDLC) for all new application implementations and for subsequent changes to existing applications.
 
-All collected data is stored in **InfluxDB**, ensuring efficient time-series data management. Reports and visualizations are then generated using **Grafana**, enabling teams to monitor key performance indicators (KPIs) such as test coverage, defect trends, and automation efficiency. By providing real-time insights, the **QM KPI Metric Tool** supports data-driven decision-making and continuous quality improvement.  
+Frequency:
+Performance testing is conducted:
+
+Prior to the initial production deployment of new applications,
+
+During significant application upgrades or infrastructure changes,
+
+As needed based on changes to expected system usage or architecture.
+
+
+Key Steps Involved:
+
+Requirement Analysis: Define expected load profiles and performance requirements.
+
+Environment Preparation: Configure test environments to closely replicate production settings.
+
+Test Design: Create performance test scenarios based on anticipated usage patterns.
+
+Test Execution: Execute load, stress, and scalability tests to validate system behavior under normal and peak conditions.
+
+Monitoring and Analysis: Measure system response times, throughput, resource utilization, and bottlenecks during testing.
+
+Reporting: Document results, identify performance issues, and recommend optimizations.
+
+Re-testing: Re-execute tests following any identified optimizations or changes.
+
+
+Policies and Standards:
+agd maintains rigorous standards for testing, including performance testing, as governed by our Systems Quality Management practice guide. Testing standards ensure that systems meet predefined performance benchmarks before deployment and that risks related to system scalability and stability are proactively addressed.
+
 
 ---
 
-Would you like to emphasize any specific KPIs or additional integrations?
+Would you also like me to prepare a slightly shorter or more formal version depending on where you need to send it (e.g., official audit response, client RFI)?
+
