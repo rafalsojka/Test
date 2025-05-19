@@ -1,92 +1,72 @@
-
-Here are several open-source Java libraries that can be used to compare images — whether by pixel, structure, or perceptual similarity:
-
+Here’s a clear and professional instruction set you can paste into your Confluence page to explain how to install and configure the GitHub Copilot plugin in IntelliJ IDEA:
 
 ---
 
-1. ImageMagick / JMagick
+## Installing and Configuring GitHub Copilot in IntelliJ IDEA
 
-Description: JMagick is a Java interface to the native ImageMagick library.
+Follow these steps to install and configure the **GitHub Copilot** plugin in IntelliJ IDEA.
 
-Use Case: Pixel-by-pixel comparison, difference highlighting.
+### Prerequisites
 
-License: Apache License / ImageMagick License
-
-Link: https://github.com/techblue/jmagick
-
-
+* IntelliJ IDEA 2022.3 or later (Community or Ultimate Edition)
+* GitHub account with GitHub Copilot subscription or trial
+* Internet connection
 
 ---
 
-2. OpenCV (Java bindings)
+### Step 1: Install the GitHub Copilot Plugin
 
-Description: OpenCV is a powerful computer vision library with Java support.
+1. Open IntelliJ IDEA.
+2. Go to **Settings** (or **Preferences** on macOS):
 
-Use Case: Structural and perceptual comparison, feature matching, similarity metrics.
-
-License: BSD License
-
-Link: https://opencv.org
-
-
-
----
-
-3. BoofCV
-
-Description: A pure Java library for real-time computer vision.
-
-Use Case: Feature tracking, image alignment, structural comparison.
-
-License: Apache License 2.0
-
-Link: https://boofcv.org
-
-
+   * Windows/Linux: `File > Settings`
+   * macOS: `IntelliJ IDEA > Preferences`
+3. Navigate to **Plugins**.
+4. In the **Marketplace** tab, search for **GitHub Copilot**.
+5. Click **Install**.
+6. Restart IntelliJ IDEA when prompted.
 
 ---
 
-4. TwelveMonkeys ImageIO
+### Step 2: Authenticate with GitHub
 
-Description: A collection of plugins and tools for Java's ImageIO.
+1. After restarting, open any project.
+2. You’ll see a **"Start Trial"** or **"Sign in with GitHub"** prompt. Click it.
+3. A browser window will open:
 
-Use Case: Read/write images in many formats, good for preprocessing.
-
-License: BSD-style license
-
-Link: https://github.com/haraldk/TwelveMonkeys
-
-
+   * Log in to your GitHub account.
+   * Authorize the GitHub Copilot plugin to access your GitHub account.
+4. Once authorized, return to IntelliJ IDEA.
 
 ---
 
-5. Image Comparison Tool by romankh3
+### Step 3: Enable GitHub Copilot
 
-Description: A simple library for comparing images with visual difference highlighting.
+1. Go to **Settings > GitHub Copilot**.
+2. Ensure **Enable GitHub Copilot** is checked.
+3. (Optional) Customize behavior under:
 
-Use Case: UI regression testing, visual differences.
-
-License: MIT License
-
-Link: https://github.com/romankh3/image-comparison
-
-
-
----
-
-6. Marvin Framework
-
-Description: An image processing framework in Java.
-
-Use Case: Feature extraction, filtering, image analysis and comparison.
-
-License: LGPL
-
-Link: http://marvinproject.sourceforge.net
-
-
+   * **Suggestions**
+   * **Appearance**
+   * **Languages**
+4. Click **Apply** and then **OK**.
 
 ---
 
-Would you like help selecting one based on your specific use case (e.g. pixel-perfect comparison, visual difference for UI, or perceptual similarity)?
+### Step 4: Start Using Copilot
 
+* Begin typing code as usual.
+* GitHub Copilot will provide suggestions inline.
+* Press `Tab` to accept, `Esc` to dismiss, or `Alt + [` / `Alt + ]` to cycle suggestions.
+
+---
+
+### Additional Tips
+
+* You can manually trigger suggestions using `Ctrl + Enter` (Windows/Linux) or `Cmd + Enter` (macOS).
+* Disable Copilot temporarily via **Tools > GitHub Copilot > Enable/Disable Copilot**.
+* Check logs or errors in **Help > Show Log in Explorer/Finder** if Copilot is not working.
+
+---
+
+Let me know if you want a version tailored for company-managed setups (e.g., proxy, admin-controlled installations).
