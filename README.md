@@ -1,3 +1,171 @@
+Perfect — running SonarQube scans for a Java Maven project via a Jenkins agent is a common and robust setup. Here's a detailed guide tailored for your case (on-premise SonarQube, Maven, Jenkins agent).
+
+
+---
+
+✅ SonarQube Scan of Java (Maven) Project via Jenkins Agent
+
+
+---
+
+🔧 1. Prerequisites
+
+On your Jenkins and agent machines, make sure:
+
+✅ Java is installed (java -version)
+
+✅ Maven is installed (mvn -v)
+
+✅ Jenkins has access to your on-prem SonarQube
+
+✅ SonarQube Scanner for Maven is available via Maven plugin
+
+✅ Jenkins SonarQube plugin is installed (optional but helpful)
+
+✅ You have a SonarQube authentication token
+
+
+
+---
+
+🔐 2. Create a SonarQube Token
+
+Log in to SonarQube UI
+
+Go to My Account → Security
+
+Create a new token (e.g., jenkins-scan-token)
+
+Copy it – it's visible only once
+
+
+
+---
+
+⚙️ 3. Configure SonarQube in Jenkins (once)
+
+Go to Manage Jenkins → Configure System, and:
+
+🔹 In “SonarQube Servers” section:
+
+Add your SonarQube server name
+
+Add server URL: http://your-sonarqube-host:9000
+
+Add token credentials:
+
+Click "Add"
+
+Choose "Secret Text" → paste the Sonar token
+
+Give it an ID (e.g., sonar-token)
+
+
+
+🔹 In “Global Tool Configuration”:
+
+(Optional) Ensure you have Maven installed and configured
+
+You don’t need to install the standalone SonarScanner if you're using Maven
+
+
+
+---
+
+🧪 4. Create Jenkins Pipeline Job (Declarative Pipeline)
+
+Here’s a sample Jenkinsfile:
+
+pipeline {
+  agent any  // Or label of your specific agent
+
+  tools {
+    maven 'Maven 3.9'  // Name as configured in Jenkins Global Tool Config
+    jdk 'JDK 17'       // Optional: name of your JDK config
+  }
+
+  environment {
+    SONAR_HOST_URL = 'http://your-sonarqube-host:9000'
+    SONAR_TOKEN = credentials('sonar-token')  // Reference the credential ID
+  }
+
+  stages {
+    stage('Build and Sonar Scan') {
+      steps {
+        sh 'mvn clean verify sonar:sonar ' +
+           '-Dsonar.projectKey=my_project_key ' +
+           '-Dsonar.host.url=${SONAR_HOST_URL} ' +
+           '-Dsonar.login=${SONAR_TOKEN}'
+      }
+    }
+  }
+}
+
+Make sure:
+
+Replace my_project_key with your actual project key from SonarQube
+
+Replace Maven 3.9 and JDK 17 with the names you configured in Jenkins
+
+Your Jenkins agent can reach the SonarQube server
+
+
+
+---
+
+📊 5. View Results
+
+After the Jenkins job completes, go to your SonarQube UI
+
+Find your project under Projects and view the scan results
+
+
+
+---
+
+🛠️ Optional: Add Code Coverage
+
+If you want test coverage using JaCoCo:
+
+1. Add the JaCoCo plugin to pom.xml (if not already there):
+
+
+
+<plugin>
+  <groupId>org.jacoco</groupId>
+  <artifactId>jacoco-maven-plugin</artifactId>
+  <version>0.8.8</version>
+  <executions>
+    <execution>
+      <goals>
+        <goal>prepare-agent</goal>
+      </goals>
+    </execution>
+    <execution>
+      <id>report</id>
+      <phase>prepare-package</phase>
+      <goals>
+        <goal>report</goal>
+      </goals>
+    </execution>
+  </executions>
+</plugin>
+
+2. Modify the Maven command in the Jenkinsfile:
+
+
+
+sh 'mvn clean verify sonar:sonar ' +
+   '-Dsonar.projectKey=my_project_key ' +
+   '-Dsonar.host.url=${SONAR_HOST_URL} ' +
+   '-Dsonar.login=${SONAR_TOKEN} ' +
+   '-Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml'
+
+
+---
+
+Let me know if you're using Freestyle jobs instead of Pipelines — I can provide steps for that too.
+
 Here's a Proof of Concept (PoC) Plan for using Azure AI solutions to automatically generate test cases based on project documentation and user-entered requirements via prompts:
 
 
