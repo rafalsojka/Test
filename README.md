@@ -1,57 +1,66 @@
-Here is a professionally worded business justification for opening an outbound connection from your internal server to https://api.github.com:443, specifically for integrating with the GitHub Copilot API:
+Short answer: yes—you can use your own truststore and tell the Java scanner that pysonar launches to use it. There’s no “pysonar setting” for this, but Java honors system properties you can pass via env vars.
+
+How to do it
+
+1) Create your own truststore (no admin needed)
+
+Windows (cmd):
+
+keytool -importcert -trustcacerts -alias sonarServer ^
+  -file C:\path\to\server.crt ^
+  -keystore C:\Users\%USERNAME%\custom-truststore.jks ^
+  -storetype JKS -storepass changeit
+
+Linux/macOS:
+
+keytool -importcert -trustcacerts -alias sonarServer \
+  -file /path/to/server.crt \
+  -keystore $HOME/custom-truststore.jks \
+  -storetype JKS -storepass changeit
+
+> keytool accepts PEM .crt files; you’ll be prompted to trust it—type yes.
+
+
+
+2) Point the Java scanner to it
+
+Set SONAR_SCANNER_OPTS before you run pysonar (same shell / same IntelliJ run config):
+
+Windows (cmd):
+
+set SONAR_SCANNER_OPTS=-Djavax.net.ssl.trustStore=C:\Users\%USERNAME%\custom-truststore.jks -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=JKS
+pysonar ...
+
+PowerShell:
+
+$env:SONAR_SCANNER_OPTS = "-Djavax.net.ssl.trustStore=$env:USERPROFILE\custom-truststore.jks -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=JKS"
+pysonar ...
+
+Linux/macOS:
+
+export SONAR_SCANNER_OPTS="-Djavax.net.ssl.trustStore=$HOME/custom-truststore.jks -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=JKS"
+pysonar ...
+
+Using IntelliJ?
+
+Put the same line in Run/Debug Configuration → Environment variables so the spawned Java process inherits it.
 
 
 ---
 
-Business Justification for Opening Outbound Connection to https://api.github.com:443
+Notes & gotchas
 
-Purpose:
-To enable secure integration with the GitHub Copilot API from internal server abc, which is required for leveraging AI-powered coding assistance and improving software development efficiency across our teams.
+This doesn’t replace the system cacerts; it just instructs Java to use your custom one for this process.
 
-Background:
-GitHub Copilot is an AI-based code completion tool that significantly enhances developer productivity by suggesting code snippets, functions, and entire blocks of code based on natural language descriptions and context. It integrates directly into supported development environments and communicates securely via the GitHub API hosted at https://api.github.com.
+If you need to include both the default CAs and your self-signed cert, either:
 
-Justification:
+Copy the original cacerts (if readable) and import your cert into the copy, or
 
-Operational Efficiency: Allowing server abc to access https://api.github.com:443 enables backend services or tools (e.g., plugins, scripts, or automation frameworks) to interact with GitHub Copilot features, such as validating licenses, retrieving Copilot suggestions, and managing user preferences.
-
-Security:
-
-The connection is outbound-only over HTTPS (port 443), ensuring encrypted and authenticated communication.
-
-The endpoint is hosted and maintained by GitHub (Microsoft), a trusted third-party vendor with industry-standard security and compliance practices.
+Start from an empty JKS (as above). For most internal SonarQube setups, trusting only your server’s CA is fine.
 
 
-Business Value:
-
-Supports ongoing initiatives to integrate AI-assisted development in our organization.
-
-Improves code quality, reduces development time, and fosters innovation by empowering developers with intelligent coding suggestions.
+If your server requires mutual TLS, you’d also set -Djavax.net.ssl.keyStore=... and its password; otherwise not needed.
 
 
-
-Risk Mitigation:
-
-Access will be limited to api.github.com only, minimizing exposure.
-
-Monitoring and logging will be enabled on outbound traffic from server abc.
-
-No sensitive internal data will be transmitted unless explicitly approved and necessary for functionality.
-
-
-Request Summary:
-
-Source: Internal server abc
-
-Destination: https://api.github.com (port 443)
-
-Protocol: HTTPS
-
-Reason: Integration with GitHub Copilot API for AI-powered development assistance
-
-
-
----
-
-Let me know if you'd like a shorter version, a version tailored to a specific audience (e.g., security team), or an attachment-ready format (e.g., PDF or DOCX).
+If you tell me your OS and how you launch pysonar (terminal vs IntelliJ), I’ll tailor the exact commands for your setup.
 
