@@ -1,66 +1,22 @@
-Short answer: yes—you can use your own truststore and tell the Java scanner that pysonar launches to use it. There’s no “pysonar setting” for this, but Java honors system properties you can pass via env vars.
-
-How to do it
-
-1) Create your own truststore (no admin needed)
-
-Windows (cmd):
-
-keytool -importcert -trustcacerts -alias sonarServer ^
-  -file C:\path\to\server.crt ^
-  -keystore C:\Users\%USERNAME%\custom-truststore.jks ^
-  -storetype JKS -storepass changeit
-
-Linux/macOS:
-
-keytool -importcert -trustcacerts -alias sonarServer \
-  -file /path/to/server.crt \
-  -keystore $HOME/custom-truststore.jks \
-  -storetype JKS -storepass changeit
-
-> keytool accepts PEM .crt files; you’ll be prompted to trust it—type yes.
-
-
-
-2) Point the Java scanner to it
-
-Set SONAR_SCANNER_OPTS before you run pysonar (same shell / same IntelliJ run config):
-
-Windows (cmd):
-
-set SONAR_SCANNER_OPTS=-Djavax.net.ssl.trustStore=C:\Users\%USERNAME%\custom-truststore.jks -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=JKS
-pysonar ...
-
-PowerShell:
-
-$env:SONAR_SCANNER_OPTS = "-Djavax.net.ssl.trustStore=$env:USERPROFILE\custom-truststore.jks -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=JKS"
-pysonar ...
-
-Linux/macOS:
-
-export SONAR_SCANNER_OPTS="-Djavax.net.ssl.trustStore=$HOME/custom-truststore.jks -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=JKS"
-pysonar ...
-
-Using IntelliJ?
-
-Put the same line in Run/Debug Configuration → Environment variables so the spawned Java process inherits it.
+Here’s a professional draft you could adapt for a mid-year assessment of an automation tester who is relatively new but has already delivered useful contributions:
 
 
 ---
 
-Notes & gotchas
+Mid-Year Performance Assessment – [Employee Name]
 
-This doesn’t replace the system cacerts; it just instructs Java to use your custom one for this process.
+[Employee Name] joined the company earlier this year as an Automation Tester and has quickly adapted to the team’s working environment, processes, and tools. In a short period of time, [he/she/they] has demonstrated strong technical skills, proactive problem-solving, and a collaborative attitude.
 
-If you need to include both the default CAs and your self-signed cert, either:
+One of the key highlights of [Employee Name]’s work so far has been the development and implementation of several utilities aimed at improving efficiency within the automation test team. These utilities have addressed practical needs identified by the team and have contributed to streamlining test execution, reporting, and maintenance processes.
 
-Copy the original cacerts (if readable) and import your cert into the copy, or
+In addition to technical contributions, [Employee Name] has shown a willingness to engage with colleagues, share knowledge, and gather feedback to improve deliverables. [He/She/They] have demonstrated good time management skills, meeting deadlines for assigned tasks while maintaining code quality and following best practices.
 
-Start from an empty JKS (as above). For most internal SonarQube setups, trusting only your server’s CA is fine.
+Looking ahead to the second half of the year, [Employee Name] is encouraged to continue expanding [his/her/their] understanding of the company’s products and testing frameworks, as well as to take on more complex automation projects. With continued focus on innovation and collaboration, [Employee Name] is well-positioned to make a lasting positive impact on the team’s overall productivity and quality.
+
+Overall, [Employee Name] has made a strong start in their role and is on track for continued growth and contributions within the team.
 
 
-If your server requires mutual TLS, you’d also set -Djavax.net.ssl.keyStore=... and its password; otherwise not needed.
+---
 
-
-If you tell me your OS and how you launch pysonar (terminal vs IntelliJ), I’ll tailor the exact commands for your setup.
+If you want, I can also prepare a shorter, more concise version for quick HR reviews, or a version with measurable KPIs. Would you like me to make those?
 
