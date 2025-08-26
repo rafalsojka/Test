@@ -1,8 +1,3 @@
+Business Impact Justification
 
-Hi \[Boss’s Name],
-
-I looked into this — the GitHub Copilot API does not provide any information about which repositories were modified using Copilot-generated code. Copilot suggestions are treated the same as manually written code once accepted, and there’s no metadata linking them back to Copilot.
-
-At the enterprise level, GitHub only offers usage reporting (e.g., how often Copilot is used and by which users/teams), but not repository-level tracking. If we need more detailed governance, we’d have to handle it through internal policies or additional tooling.
-
-Best regards,
+Lack of access to the IntelliJ plugin marketplace prevents automation testers from using required plugins that are essential for developing and running regression test suites. Without these plugins, IntelliJ cannot be used effectively, leading to reduced productivity, limited test automation, and increased risk of defects going undetected. Controlled access to plugins is critical to maintain efficient and reliable testing.
