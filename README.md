@@ -1,22 +1,8 @@
-Here’s a professional draft you could adapt for a mid-year assessment of an automation tester who is relatively new but has already delivered useful contributions:
 
+Hi \[Boss’s Name],
 
----
+I looked into this — the GitHub Copilot API does not provide any information about which repositories were modified using Copilot-generated code. Copilot suggestions are treated the same as manually written code once accepted, and there’s no metadata linking them back to Copilot.
 
-Mid-Year Performance Assessment – [Employee Name]
+At the enterprise level, GitHub only offers usage reporting (e.g., how often Copilot is used and by which users/teams), but not repository-level tracking. If we need more detailed governance, we’d have to handle it through internal policies or additional tooling.
 
-[Employee Name] joined the company earlier this year as an Automation Tester and has quickly adapted to the team’s working environment, processes, and tools. In a short period of time, [he/she/they] has demonstrated strong technical skills, proactive problem-solving, and a collaborative attitude.
-
-One of the key highlights of [Employee Name]’s work so far has been the development and implementation of several utilities aimed at improving efficiency within the automation test team. These utilities have addressed practical needs identified by the team and have contributed to streamlining test execution, reporting, and maintenance processes.
-
-In addition to technical contributions, [Employee Name] has shown a willingness to engage with colleagues, share knowledge, and gather feedback to improve deliverables. [He/She/They] have demonstrated good time management skills, meeting deadlines for assigned tasks while maintaining code quality and following best practices.
-
-Looking ahead to the second half of the year, [Employee Name] is encouraged to continue expanding [his/her/their] understanding of the company’s products and testing frameworks, as well as to take on more complex automation projects. With continued focus on innovation and collaboration, [Employee Name] is well-positioned to make a lasting positive impact on the team’s overall productivity and quality.
-
-Overall, [Employee Name] has made a strong start in their role and is on track for continued growth and contributions within the team.
-
-
----
-
-If you want, I can also prepare a shorter, more concise version for quick HR reviews, or a version with measurable KPIs. Would you like me to make those?
-
+Best regards,
