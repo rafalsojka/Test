@@ -1,13 +1,36 @@
-Manager Summary – 2025 Performance Review (Imran)
+Absolutely! I'll add a polished line about that. Here’s the updated version:
 
-Imran demonstrated dependable and consistent performance in his Application Administrator role throughout 2025, with clear contributions across application support, system administration, training, and security-related activities. He effectively supported key Quality Management and enterprise tools, including qTest Manager, JIRA, Confluence, Bitbucket, NeoLoad, Test Complete, XMind, and UFT. Imran handled day-to-day inquiries, user access setup, project configurations, and customization requests, ensuring uninterrupted service for multiple teams and projects.
 
-Imran took ownership of several operational and technical initiatives highlighted in his self-assessment. He successfully performed qTest Manager upgrades in the test environment and led PostgreSQL database upgrades, ensuring system stability and compatibility. He identified and analyzed performance issues within the qTest database using Glowroot, enabling the team to better understand slow-running queries and generate meaningful insights for reporting. He also conducted regular application wellness checks across supported tools, proactively helping to maintain system health and reliability. His collaboration with vendors strengthened client-vendor relationships and supported ongoing enhancements and issue resolution.
+---
 
-In addition to application support, Imran assumed a new role as Security Coordinator during the year. In this capacity, he managed vulnerability remediation activities through CyberTrack by reviewing weekly security reports, coordinating with OSS distribution and other support teams, and ensuring vulnerabilities on Quality Management servers were reviewed and closed in a timely manner. This additional responsibility demonstrated his ability to take on expanded scope while maintaining his core operational duties.
+Subject: Summary of GitHub Copilot Features in IntelliJ
 
-Imran also contributed to team capability and continuity by training and mentoring interns, providing hands-on guidance in qTest Manager, JIRA, Confluence, and Bitbucket. He supported JIRA administration activities such as project creation, workflow and screen clean-ups, weekly data imports, and participation in tool replacement evaluations, including ServiceNow and Azure DevOps. His involvement in data validation and recurring imports reflected strong attention to detail and process adherence.
+Dear [Name],
 
-Focus for 2026
+I’d like to give you a quick overview of the key features available with GitHub Copilot in IntelliJ.
 
-In 2026, Imran is expected to continue strengthening his technical and coordination skills while taking on more delivery-oriented ownership. A key focus will be the migration of NeoLoad Web to OpenShift, where Imran should actively contribute to design discussions, migration planning, execution, and post-migration support. This initiative will further develop his platform and containerization expertise while supporting the team’s strategic infrastructure objectives.
+1. Inline Code Suggestions:
+GitHub Copilot provides real-time, inline code completions as you type, helping you code faster and with more context.
+
+[Screenshot of Inline Code Suggestions]
+
+
+2. Chat Option:
+Within the chat feature, we have two modes enabled: Ask and Edit.
+
+Ask Mode: You can ask natural language questions about your code or concepts.
+
+Edit Mode: You can request changes—like refactoring—through natural language prompts.
+
+
+[Screenshot of Chat with Ask Mode]
+[Screenshot of Chat with Edit Mode]
+
+
+
+Note: The Agent mode, which is more autonomous, is disabled by our security department due to strict banking security policies.
+
+If you need further details or examples, feel free to reach out!
+
+Best regards,
+[Your Name]
