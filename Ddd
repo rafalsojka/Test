@@ -1,1 +1,16 @@
-
+<div style="display: flex; justify-content: space-between; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+    <div style="flex: 1;">
+        <h3>GitHub Copilot</h3>
+        <p>
+            GitHub Copilot is utilized for AI-assisted coding. It helps developers generate code faster and improve productivity.
+        </p>
+    </div>
+    <div style="flex: 1; text-align: right;">
+        <h4>Key Metrics</h4>
+        <ul>
+            <li>Adoption Rate: 85%</li>
+            <li>Code Suggestions per Day: 500+</li>
+            <li>Time Saved per Dev: 2 hours/day</li>
+        </ul>
+    </div>
+</div>
