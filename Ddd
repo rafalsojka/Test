@@ -1,18 +1,19 @@
-Got it! Let’s broaden that scope. How about this:
+w of our performance testing approach, tools, and strategies, and share practical insights from recent projects. The presentation will also address key questions such as:
 
-"Governance ensures that all key tools—GitHub Copilot, Hexaware KPI metrics, Agile dashboard, DevOps dashboard, and Test Automation Maturity—align with organizational policies and strategic goals. We foster accountability and transparency by monitoring adoption, measuring impact, and ensuring these platforms support innovation while adhering to compliance and responsible practices."<div style="display: flex; justify-content: space-between; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
-    <div style="flex: 1;">
-        <h3>GitHub Copilot</h3>
-        <p>
-            GitHub Copilot is utilized for AI-assisted coding. It helps developers generate code faster and improve productivity.
-        </p>
-    </div>
-    <div style="flex: 1; text-align: right;">
-        <h4>Key Metrics</h4>
-        <ul>
-            <li>Adoption Rate: 85%</li>
-            <li>Code Suggestions per Day: 500+</li>
-            <li>Time Saved per Dev: 2 hours/day</li>
-        </ul>
-    </div>
-</div>
+What is performance testing and why is it critical for product quality?
+
+When should performance testing be introduced in the development lifecycle?
+
+What types of performance tests (load, stress, endurance, spike, etc.) should be applied in different scenarios?
+
+How do we define realistic performance benchmarks and success criteria?
+
+What are common performance bottlenecks and how can they be identified and resolved?
+
+How can teams effectively collaborate to prevent performance issues early?
+
+The session will include time for discussion and Q&A, providing an opportunity to clarify open points and exchange experiences.
+
+We warmly invite you to join us to deepen your understanding of performance testing practices and explore how we can collectively improve system reliability, scalability, and overall product quality.
+
+We look forward to your participation.
