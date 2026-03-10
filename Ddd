@@ -1,17 +1,6 @@
-You can present it in **two short sections** like this:
+**Key Features:**
+This release introduces several enhancements, including a PostgreSQL search option, the ability to cancel project cloning, improvements to Jira integration, new API capabilities, and updates to qTest Insights reporting and navigation.
 
-**qTest 2025.8 – Key Features**
+**Bug Fixes:**
+The release also includes fixes addressing API behavior, Jira synchronization, and Insights reporting issues, along with general performance and stability improvements across the platform.
 
-* PostgreSQL search option available as an alternative to ElasticSearch.
-* Ability to **cancel project cloning** while it is in progress.
-* Improved **Jira integration** showing all test case versions and related test runs.
-* New API parameter `skipEmailNotifications` when adding users.
-* **Insights Explore Data (Beta)** reports for Defects and Requirements.
-* **Simplified Insights navigation** with improved dashboard and report access.
-
-**qTest 2025.8 – Bug Fixes**
-
-* Fixed issues with **API operations and user notification handling**.
-* Resolved **Jira integration synchronization issues**.
-* Addressed **Insights reporting and data refresh problems**.
-* General **performance and stability improvements** across the platform.
