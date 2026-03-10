@@ -2,3 +2,6 @@ GitHub Copilot is an AI-powered coding assistant used by our automation testers 
 **Test Automation Maturity Dashboard**
 
 The Test Automation Maturity Dashboard provides a consolidated view of key testing metrics collected automatically across all projects where testers are involved. It brings together data related to defects, manual testing activities, and automated testing coverage to give a clear picture of the current state of software testing. This dashboard represents the next step in improving how we gather and analyze testing data, enabling better visibility into testing progress, supporting data-driven decisions, and helping teams continuously improve their test automation maturity.
+**Hexaware Performance Dashboard**
+
+The Hexaware Performance Dashboard addresses existing challenges in collecting and presenting information related to Hexaware consultants’ assessments and key performance indicators across the projects they support. It consolidates the main KPI metrics provided by Hexaware into a single, structured view, enabling clearer reporting and improved transparency. By centralizing this data, the dashboard enhances reportability, supports more effective monitoring of consultant contributions, and enables deeper analysis of performance trends over time.
