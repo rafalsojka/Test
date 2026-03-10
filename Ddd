@@ -1,12 +1,17 @@
-Dear Cross Team,
+You can present it in **two short sections** like this:
 
-Please be informed that the QTest application will undergo a scheduled upgrade this coming Saturday between **7:00 AM and 3:00 PM EST**.
+**qTest 2025.8 – Key Features**
 
-During this maintenance window, **QTest will not be available to users**. We recommend planning your work accordingly to avoid any disruption.
+* PostgreSQL search option available as an alternative to ElasticSearch.
+* Ability to **cancel project cloning** while it is in progress.
+* Improved **Jira integration** showing all test case versions and related test runs.
+* New API parameter `skipEmailNotifications` when adding users.
+* **Insights Explore Data (Beta)** reports for Defects and Requirements.
+* **Simplified Insights navigation** with improved dashboard and report access.
 
-If you have any concerns or anticipate any impact to your activities during this time, please let us know by sending an email to **[qtest.support@bbh.com](mailto:qtest.support@bbh.com)**.
+**qTest 2025.8 – Bug Fixes**
 
-Thank you for your understanding and cooperation.
-
-Best regards,
-[Your Name]
+* Fixed issues with **API operations and user notification handling**.
+* Resolved **Jira integration synchronization issues**.
+* Addressed **Insights reporting and data refresh problems**.
+* General **performance and stability improvements** across the platform.
