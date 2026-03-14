@@ -1,1 +1,30 @@
 
+Here is a more professional and polished version of your text while keeping the meaning the same:
+
+
+---
+
+The qtest upgrade has been successfully finalized within 7 hours, and the change request has been completed.
+
+Comment from my side:
+
+The 5-hour production access window allowed us to perform only the critical technical changes within a limited timeframe. Due to this constraint, we were unable to complete the necessary cleanup activities, including the removal of PostgreSQL 13 (the older database version).
+
+Next week, we will need to raise a new change request to remove the outdated PostgreSQL 13 instance and perform additional cleanup activities during an available weekend window, either later this month or next month.
+
+However, the main objective of the upgrade has been successfully achieved, and the application is functioning correctly following the post-deployment wellness checks.
+
+During the upgrade process, no issues were encountered. Additionally, the backup process in PostgreSQL 16 is significantly faster compared to PostgreSQL 13. Previously, backups took approximately 3 hours, whereas they now complete in about 1.5 hours. This improvement enabled us to finalize the upgrade of the last qtest component before the production access window expired.
+
+Another important factor contributing to the success of this upgrade was Imran’s extensive experience with qtest upgrades and the thorough preparation performed in the test environment, which allowed the team to complete the work within the limited maintenance window.
+
+Special thanks to Imran, whose technical expertise and support were instrumental in successfully completing the upgrade within the 5-hour window.
+
+
+---
+
+If you'd like, I can also provide:
+
+a shorter executive-style version for management, or
+
+a more technical version suitable for a change ticket or RCA document.
