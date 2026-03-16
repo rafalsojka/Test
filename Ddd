@@ -1,1 +1,97 @@
+You can extend the page with a short “Available Utilities” section describing the two tools.
+
+
+---
+
+Available Utilities
+
+Data Comparison Tool
+
+Author: Adrian
+
+A utility designed to compare datasets across different sources or environments. The tool helps testers quickly identify differences in records, fields, or values between systems such as databases, files, or API responses. It is particularly useful during data validation, migration testing, and regression testing where verifying data consistency is required.
+
+Key benefits:
+
+Quickly highlights mismatches between datasets
+
+Supports validation of large volumes of data
+
+Reduces manual comparison effort
+
+Improves accuracy during data verification activities
+
+
+
+---
+
+Rainmaker – Password Encryption/Decryption Utility
+
+Rainmaker is a utility used to encrypt and decrypt passwords required for test environments, configuration files, or automated test scripts. It allows testers to securely manage credentials without exposing plain text passwords.
+
+Key benefits:
+
+Secure handling of credentials in test automation
+
+Supports encryption and decryption for configuration usage
+
+Helps keep sensitive data protected in scripts and repositories
+
+Simplifies credential management for testing tools and frameworks
+
+
+
+---
+
+If you'd like, I can also help you add a clean Confluence table format (which is usually preferred for tool catalogs) so new utilities can be added easily in the future.
+
+You can extend the page with a short “Available Utilities” section describing the two tools.
+
+
+---
+
+Available Utilities
+
+Data Comparison Tool
+
+Author: Adrian
+
+A utility designed to compare datasets across different sources or environments. The tool helps testers quickly identify differences in records, fields, or values between systems such as databases, files, or API responses. It is particularly useful during data validation, migration testing, and regression testing where verifying data consistency is required.
+
+Key benefits:
+
+Quickly highlights mismatches between datasets
+
+Supports validation of large volumes of data
+
+Reduces manual comparison effort
+
+Improves accuracy during data verification activities
+
+
+
+---
+
+Rainmaker – Password Encryption/Decryption Utility
+
+Rainmaker is a utility used to encrypt and decrypt passwords required for test environments, configuration files, or automated test scripts. It allows testers to securely manage credentials without exposing plain text passwords.
+
+Key benefits:
+
+Secure handling of credentials in test automation
+
+Supports encryption and decryption for configuration usage
+
+Helps keep sensitive data protected in scripts and repositories
+
+Simplifies credential management for testing tools and frameworks
+
+
+
+---
+
+If you'd like, I can also help you add a clean Confluence table format (which is usually preferred for tool catalogs) so new utilities can be added easily in the future.
+
+
+
 
