@@ -1,1 +1,98 @@
-These Grafana dashboards provide a centralized view of key engineering and delivery metrics across projects, including test automation maturity, GitHub Copilot adoption, consultant performance, and upcoming Agile and DevOpsSec insights. By consolidating data from multiple sources into structured reports, they improve transparency, support data-driven decision-making, and help teams track progress, productivity, and overall delivery effectiveness. The dashboards enable better visibility into testing activities, tool usage, and performance trends across the organization.
+Got it — since you can only use inline styles (style=""), you can still make the link much more visible 👍
+
+Here are the best options you can copy-paste directly:
+
+
+---
+
+✅ 1. Make it a button (best solution)
+
+<a href="#"
+   style="
+     display:inline-block;
+     background-color:#0969da;
+     color:white;
+     padding:12px 18px;
+     border-radius:8px;
+     text-decoration:none;
+     font-weight:600;
+     font-size:16px;
+     margin-top:16px;
+   ">
+   → Open GitHub Copilot Governance Dashboard
+</a>
+
+👉 This is the biggest improvement — it becomes a clear CTA button.
+
+
+---
+
+✅ 2. Add simple hover effect (inline workaround)
+
+Inline styles don’t support :hover, but you can fake it:
+
+<a href="#"
+   style="
+     display:inline-block;
+     background-color:#0969da;
+     color:white;
+     padding:12px 18px;
+     border-radius:8px;
+     text-decoration:none;
+     font-weight:600;
+   "
+   onmouseover="this.style.backgroundColor='#054da3'"
+   onmouseout="this.style.backgroundColor='#0969da'">
+   → Open Dashboard
+</a>
+
+
+---
+
+✅ 3. If you want something less “button-like”
+
+<div style="
+  background:#f6f8fa;
+  padding:12px;
+  border-left:4px solid #0969da;
+  border-radius:6px;
+  margin-top:16px;
+">
+  <a href="#"
+     style="
+       color:#0969da;
+       font-weight:600;
+       text-decoration:none;
+     ">
+     → Open GitHub Copilot Governance Dashboard
+  </a>
+</div>
+
+
+---
+
+✅ 4. Minimum change (quick fix)
+
+If you can barely change anything:
+
+<a href="#"
+   style="
+     color:#0969da;
+     font-weight:bold;
+     font-size:16px;
+     text-decoration:underline;
+   ">
+   → Open GitHub Copilot Governance Dashboard
+</a>
+
+
+---
+
+🔥 Recommendation
+
+Use option #1 (button) — it’s the cleanest and most noticeable.
+
+
+---
+
+If you want, I can match the style to your exact page (colors, layout, spacing) so it looks native instead of “added on.”These Grafana dashboards provide a centralized view of key engineering and delivery metrics across projects, including test automation maturity, GitHub Copilot adoption, consultant performance, and upcoming Agile and DevOpsSec insights. By consolidating data from multiple sources into structured reports, they improve transparency, support data-driven decision-making, and help teams track progress, productivity, and overall delivery effectiveness. The dashboards enable better visibility into testing activities, tool usage, and performance trends across the organization.
