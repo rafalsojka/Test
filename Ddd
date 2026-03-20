@@ -1,98 +1,31 @@
-Got it — since you can only use inline styles (style=""), you can still make the link much more visible 👍
-
-Here are the best options you can copy-paste directly:
+Here’s a more polished and professional version of your message:
 
 
 ---
 
-✅ 1. Make it a button (best solution)
+Hi Bartek, James, Vivian,
 
-<a href="#"
-   style="
-     display:inline-block;
-     background-color:#0969da;
-     color:white;
-     padding:12px 18px;
-     border-radius:8px;
-     text-decoration:none;
-     font-weight:600;
-     font-size:16px;
-     margin-top:16px;
-   ">
-   → Open GitHub Copilot Governance Dashboard
-</a>
+I would like to follow up on the proposed changes regarding Q-IDs and the pre-approval process starting from March 23.
 
-👉 This is the biggest improvement — it becomes a clear CTA button.
+The ITSS Performance Testing Team, along with qTest Support and Jira Support teams, access our test servers on a daily basis to carry out their responsibilities. Requiring daily access requests would significantly impact efficiency and place an additional administrative burden on both our teams and senior leadership.
+
+1. ITSS Performance Testing Team
+The team utilizes three key servers—qcload01, qcload02, and qcload05—to develop and execute load tests for BBH applications. These activities require flexible and continuous access to resources such as CPU, memory, and network. Without pre-approved access, daily requests would be necessary, which would hinder productivity.
 
 
----
+2. qTest / Jira Support
+To effectively troubleshoot issues reported by BBH testers and support upcoming production upgrades, the team requires ongoing access to qTest/Jira test servers across environments. As we prepare for the 2026.1 upgrade, frequent access will be essential to validate configurations, conduct multiple upgrade tests, and proactively identify and resolve potential issues in collaboration with Tricentis. A daily access request process would significantly limit our ability to prepare effectively.
 
-✅ 2. Add simple hover effect (inline workaround)
 
-Inline styles don’t support :hover, but you can fake it:
 
-<a href="#"
-   style="
-     display:inline-block;
-     background-color:#0969da;
-     color:white;
-     padding:12px 18px;
-     border-radius:8px;
-     text-decoration:none;
-     font-weight:600;
-   "
-   onmouseover="this.style.backgroundColor='#054da3'"
-   onmouseout="this.style.backgroundColor='#0969da'">
-   → Open Dashboard
-</a>
+In summary, aligning Q-ID access conditions with A-ID policies (including limited access windows and extended pre-approval processes) would remove the flexibility required for these operational activities. This would likely result in a high volume of daily access requests, which we are aiming to avoid.
+
+I would appreciate the opportunity to discuss this further at your convenience.
+
+Kind regards,
+[Your Name]
 
 
 ---
 
-✅ 3. If you want something less “button-like”
-
-<div style="
-  background:#f6f8fa;
-  padding:12px;
-  border-left:4px solid #0969da;
-  border-radius:6px;
-  margin-top:16px;
-">
-  <a href="#"
-     style="
-       color:#0969da;
-       font-weight:600;
-       text-decoration:none;
-     ">
-     → Open GitHub Copilot Governance Dashboard
-  </a>
-</div>
-
-
----
-
-✅ 4. Minimum change (quick fix)
-
-If you can barely change anything:
-
-<a href="#"
-   style="
-     color:#0969da;
-     font-weight:bold;
-     font-size:16px;
-     text-decoration:underline;
-   ">
-   → Open GitHub Copilot Governance Dashboard
-</a>
-
-
----
-
-🔥 Recommendation
-
-Use option #1 (button) — it’s the cleanest and most noticeable.
-
-
----
-
-If you want, I can match the style to your exact page (colors, layout, spacing) so it looks native instead of “added on.”These Grafana dashboards provide a centralized view of key engineering and delivery metrics across projects, including test automation maturity, GitHub Copilot adoption, consultant performance, and upcoming Agile and DevOpsSec insights. By consolidating data from multiple sources into structured reports, they improve transparency, support data-driven decision-making, and help teams track progress, productivity, and overall delivery effectiveness. The dashboards enable better visibility into testing activities, tool usage, and performance trends across the organization.
+If you want, I can make it more assertive, shorter, or more formal depending on company culture.
